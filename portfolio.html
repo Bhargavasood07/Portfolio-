@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aspiring Machine Learning Engineer and Data Analyst building intelligent solutions through machine learning, analytics, and data-driven decision making.">
-    <meta name="Bhargava sood" content="">
-    <title>Bhargava Portfolio</title>
-    <style>
-:root {
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Aspiring Machine Learning Engineer and Data Analyst building intelligent solutions through machine learning, analytics, and data-driven decision making." name="description"/>
+<meta content="" name="Bhargava sood"/>
+<title>Bhargava Portfolio</title>
+<style>:root {
     --primary: #6c63ff;
     --primary-dark: #5a52d5;
     --primary-light: #a89cff;
@@ -2653,1000 +2653,1359 @@ footer {
     .terminal-status { display: none; }
 }
 
+
+/* =====================================================
+   DECENT PORTFOLIO POLISH: clean, simple, less AI-looking
+   ===================================================== */
+body.decent-portfolio {
+    --primary: #5b7cfa;
+    --primary-dark: #4665d8;
+    --primary-light: #8ea2ff;
+    --secondary: #6b7280;
+    --accent: #22c55e;
+    --dark: #0f172a;
+    --dark-2: #111827;
+    --dark-3: #172033;
+    --card-bg: #151f32;
+    --text: #f8fafc;
+    --text-muted: #aab4c6;
+    --border: rgba(148, 163, 184, 0.18);
+    background: var(--dark);
+}
+
+body.decent-portfolio .tech-grid-bg,
+body.decent-portfolio .hero-bg-shapes,
+body.decent-portfolio .resume-orbit,
+body.decent-portfolio .tech-section::before,
+body.decent-portfolio .journey-lab::before {
+    display: none !important;
+}
+
+body.decent-portfolio #header {
+    background: rgba(15, 23, 42, 0.92);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+    box-shadow: none;
+}
+body.decent-portfolio .logo-initials {
+    border-radius: 12px;
+    background: #5b7cfa;
+    box-shadow: none;
+    animation: none !important;
+}
+body.decent-portfolio .nav-link::after { display: none !important; }
+body.decent-portfolio .nav-link:hover,
+body.decent-portfolio .nav-link.active {
+    background: rgba(91,124,250,0.10);
+    color: #ffffff;
+}
+
+body.decent-portfolio #hero {
+    min-height: auto;
+    padding: 145px 0 90px;
+    background: linear-gradient(180deg, #0f172a 0%, #111827 100%) !important;
+}
+body.decent-portfolio .tech-hero-content {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
+    max-width: 1180px;
+}
+body.decent-portfolio .tech-pill,
+body.decent-portfolio .hero-eyebrow {
+    background: rgba(91,124,250,0.10) !important;
+    border: 1px solid rgba(91,124,250,0.22) !important;
+    color: #cbd5ff !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .pulse-dot { animation: none !important; }
+body.decent-portfolio .glitch-title,
+body.decent-portfolio .hero-name {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: #f8fafc !important;
+    text-shadow: none !important;
+    animation: fadeUp 0.6s ease 0.2s forwards !important;
+}
+body.decent-portfolio .glitch-title::before,
+body.decent-portfolio .glitch-title::after {
+    display: none !important;
+}
+body.decent-portfolio .hero-name span {
+    color: #9fb0ff;
+}
+body.decent-portfolio .terminal-line,
+body.decent-portfolio .hero-typed-wrapper {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    font-family: var(--font) !important;
+    color: #cbd5e1 !important;
+}
+body.decent-portfolio .terminal-prompt {
+    color: #cbd5e1 !important;
+    margin-right: 6px;
+    font-family: var(--font) !important;
+}
+body.decent-portfolio .typed-text,
+body.decent-portfolio .fake-cursor {
+    color: #9fb0ff !important;
+    font-family: var(--font) !important;
+}
+body.decent-portfolio .fake-cursor { display: none !important; }
+body.decent-portfolio .hero-tagline {
+    max-width: 650px;
+    color: #b6c0d0;
+    font-size: 17px;
+}
+body.decent-portfolio .hero-stats {
+    gap: 14px;
+}
+body.decent-portfolio .hero-stats div {
+    background: rgba(21, 31, 50, 0.75) !important;
+    border: 1px solid rgba(148, 163, 184, 0.18) !important;
+    box-shadow: none !important;
+    border-radius: 14px !important;
+}
+body.decent-portfolio .tech-dashboard-card {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.18) !important;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.22) !important;
+    border-radius: 22px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    animation: none !important;
+}
+body.decent-portfolio .tech-dashboard-card::before,
+body.decent-portfolio .tech-dashboard-card::after {
+    display: none !important;
+}
+body.decent-portfolio .profile-card-top {
+    padding: 18px 22px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #dbe5f6;
+    background: rgba(255,255,255,0.025);
+}
+body.decent-portfolio .profile-card-top p {
+    margin: 0;
+    font-weight: 700;
+}
+body.decent-portfolio .profile-dot {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+body.decent-portfolio .profile-card-body {
+    padding: 24px;
+}
+body.decent-portfolio .profile-card-body h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+body.decent-portfolio .profile-card-body p {
+    color: #aab4c6;
+    margin-bottom: 18px;
+}
+body.decent-portfolio .profile-card-list {
+    display: grid;
+    gap: 10px;
+}
+body.decent-portfolio .profile-card-list span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 12px;
+    padding: 10px 12px;
+    color: #d8e0ef;
+    font-size: 14px;
+}
+body.decent-portfolio .profile-card-list i { color: #9fb0ff; }
+
+body.decent-portfolio section {
+    padding: 90px 0;
+}
+body.decent-portfolio .section-tag {
+    background: rgba(91,124,250,0.09) !important;
+    border: 1px solid rgba(91,124,250,0.20) !important;
+    color: #aebcff !important;
+}
+body.decent-portfolio .section-divider {
+    width: 76px !important;
+    height: 3px !important;
+    background: #5b7cfa !important;
+    border-radius: 20px;
+}
+body.decent-portfolio .section-header h2 {
+    letter-spacing: -0.02em;
+}
+
+body.decent-portfolio .journey-console {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.16) !important;
+    box-shadow: none !important;
+    border-radius: 22px !important;
+}
+body.decent-portfolio .journey-console-top,
+body.decent-portfolio .resume-terminal-bar,
+body.decent-portfolio .form-terminal-bar {
+    background: rgba(255,255,255,0.025) !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12) !important;
+}
+body.decent-portfolio .console-dots,
+body.decent-portfolio .terminal-dots,
+body.decent-portfolio .terminal-status,
+body.decent-portfolio .resume-live {
+    display: none !important;
+}
+body.decent-portfolio .journey-stat-card,
+body.decent-portfolio .timeline-content,
+body.decent-portfolio .skill-card {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.16) !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .timeline-content:hover,
+body.decent-portfolio .skill-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(91,124,250,0.35) !important;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.18) !important;
+}
+body.decent-portfolio .journey-track-num {
+    opacity: 0.16 !important;
+}
+body.decent-portfolio .read-more-btn {
+    background: transparent !important;
+    border-color: rgba(148, 163, 184, 0.22) !important;
+    color: #aebcff !important;
+}
+
+body.decent-portfolio #projects {
+    background: #0f172a !important;
+}
+body.decent-portfolio .project-toolbar {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.16) !important;
+    box-shadow: none !important;
+    border-radius: 18px !important;
+    color: #b6c0d0 !important;
+}
+body.decent-portfolio .tech-projects-wrapper {
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .projects-container {
+    gap: 22px !important;
+    padding: 12px 2px 26px !important;
+}
+body.decent-portfolio .project-card,
+body.decent-portfolio .tech-project-card {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.16) !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .project-card::before,
+body.decent-portfolio .project-card::after {
+    display: none !important;
+}
+body.decent-portfolio .project-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(91,124,250,0.35) !important;
+    box-shadow: 0 18px 42px rgba(0,0,0,0.20) !important;
+}
+body.decent-portfolio .project-img-placeholder {
+    height: 155px !important;
+    background: #111827 !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12) !important;
+}
+body.decent-portfolio .project-img-placeholder::before,
+body.decent-portfolio .project-img-placeholder::after {
+    display: none !important;
+}
+body.decent-portfolio .project-img-placeholder i {
+    color: #9fb0ff !important;
+    opacity: 1 !important;
+}
+body.decent-portfolio .project-kicker {
+    color: #9fb0ff !important;
+    font-family: var(--font) !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+body.decent-portfolio .tag {
+    background: rgba(91,124,250,0.10) !important;
+    border: 1px solid rgba(91,124,250,0.18) !important;
+    color: #cbd5ff !important;
+}
+body.decent-portfolio .scroll-btn {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.18) !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .scroll-btn:hover {
+    background: #5b7cfa !important;
+}
+body.decent-portfolio .tech-project-scroller::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.55) !important;
+}
+
+body.decent-portfolio #resume {
+    background: #111827 !important;
+    position: relative;
+    overflow: hidden;
+}
+body.decent-portfolio .resume-shell {
+    gap: 24px !important;
+}
+body.decent-portfolio .resume-panel {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.16) !important;
+    box-shadow: none !important;
+    border-radius: 22px !important;
+}
+body.decent-portfolio .resume-terminal-bar {
+    display: flex !important;
+    padding: 16px 22px !important;
+}
+body.decent-portfolio .resume-file-name {
+    font-family: var(--font) !important;
+    color: #dbe5f6 !important;
+    font-weight: 700;
+}
+body.decent-portfolio .resume-avatar {
+    background: #5b7cfa !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .resume-metric,
+body.decent-portfolio .resume-stack-item,
+body.decent-portfolio .resume-chip-row span {
+    background: rgba(255,255,255,0.035) !important;
+    border: 1px solid rgba(148, 163, 184, 0.12) !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .resume-side-header {
+    border-bottom: 1px solid rgba(148,163,184,0.12);
+}
+
+body.decent-portfolio #contact {
+    background: #0f172a !important;
+}
+body.decent-portfolio .contact-form-wrapper,
+body.decent-portfolio .contact-console-card {
+    background: #151f32 !important;
+    border: 1px solid rgba(148, 163, 184, 0.16) !important;
+    box-shadow: none !important;
+    border-radius: 22px !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+body.decent-portfolio .form-terminal-bar {
+    display: flex !important;
+    padding: 16px 22px !important;
+}
+body.decent-portfolio .terminal-title {
+    font-family: var(--font) !important;
+    color: #dbe5f6 !important;
+    font-weight: 700;
+}
+body.decent-portfolio .contact-form-pro {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 28px !important;
+}
+body.decent-portfolio .form-code-chip,
+body.decent-portfolio .form-status-grid,
+body.decent-portfolio .form-mini-tag {
+    display: none !important;
+}
+body.decent-portfolio .form-heading-row h3 {
+    font-size: 24px !important;
+    margin-bottom: 4px !important;
+}
+body.decent-portfolio .form-intro {
+    color: #aab4c6 !important;
+    margin-bottom: 22px !important;
+}
+body.decent-portfolio .contact-form-pro input,
+body.decent-portfolio .contact-form-pro textarea,
+body.decent-portfolio .form-group input,
+body.decent-portfolio .form-group textarea {
+    background: rgba(255,255,255,0.035) !important;
+    border: 1px solid rgba(148, 163, 184, 0.18) !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+body.decent-portfolio .contact-form-pro input:focus,
+body.decent-portfolio .contact-form-pro textarea:focus {
+    border-color: #5b7cfa !important;
+    background: rgba(91,124,250,0.06) !important;
+    box-shadow: 0 0 0 3px rgba(91,124,250,0.12) !important;
+}
+body.decent-portfolio .form-submit-pro,
+body.decent-portfolio .btn-primary {
+    background: #5b7cfa !important;
+    box-shadow: none !important;
+    border-color: #5b7cfa !important;
+}
+body.decent-portfolio .btn-primary:hover,
+body.decent-portfolio .form-submit-pro:hover {
+    transform: translateY(-2px) !important;
+    background: #4f6fec !important;
+    box-shadow: 0 12px 26px rgba(0,0,0,0.18) !important;
+}
+body.decent-portfolio .btn-outline {
+    border-color: rgba(148,163,184,0.28) !important;
+    color: #dbe5f6 !important;
+}
+body.decent-portfolio .btn-outline:hover {
+    background: rgba(255,255,255,0.06) !important;
+}
+body.decent-portfolio .form-submit-pro::after { display: none !important; }
+body.decent-portfolio .contact-detail-item {
+    background: rgba(21,31,50,0.55);
+    border: 1px solid rgba(148,163,184,0.12);
+    border-radius: 14px;
+    padding: 12px;
+}
+body.decent-portfolio .contact-icon {
+    background: rgba(91,124,250,0.12) !important;
+    color: #9fb0ff !important;
+}
+
+@media (max-width: 900px) {
+    body.decent-portfolio .tech-hero-content,
+    body.decent-portfolio .resume-shell {
+        grid-template-columns: 1fr !important;
+    }
+    body.decent-portfolio #hero {
+        padding-top: 125px;
+    }
+}
+@media (max-width: 640px) {
+    body.decent-portfolio .hero-stats {
+        grid-template-columns: 1fr;
+    }
+    body.decent-portfolio .project-card {
+        flex-basis: 290px !important;
+    }
+    body.decent-portfolio .contact-form-pro {
+        padding: 22px !important;
+    }
+}
 </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
 </head>
-<body>
-    <!-- ========== HEADER ========== -->
-    <header id="header">
-        <div class="container header-container">
-            <a href="#hero" class="logo" aria-label="Bhargava Sood Portfolio Home">
-                <span class="logo-initials">BS</span>
-                <span class="logo-name">Bhargava<span class="logo-accent">Sood</span></span>
-            </a>
-
-            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </div>
-
-            <nav id="nav-menu">
-                <ul>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#journey" class="nav-link">Journey</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#resume" class="nav-link">Resume</a></li>
-                    <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- ========== HERO ========== -->
-    <section id="hero" class="tech-hero">
-        <div class="tech-grid-bg"></div>
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="binary-rain" aria-hidden="true">
-            <span>0101</span><span>AI</span><span>ML</span><span>SQL</span><span>1010</span><span>DATA</span>
-        </div>
-
-        <div class="container hero-content tech-hero-content">
-            <div class="hero-left">
-                <div class="hero-eyebrow tech-pill">
-                    <span class="pulse-dot"></span> AI & Data Science Portfolio
+<body class="decent-portfolio">
+<!-- ========== HEADER ========== -->
+<header id="header">
+<div class="container header-container">
+<a aria-label="Bhargava Sood Portfolio Home" class="logo" href="#hero">
+<span class="logo-initials">BS</span>
+<span class="logo-name">Bhargava<span class="logo-accent">Sood</span></span>
+</a>
+<div aria-label="Toggle menu" class="menu-toggle" id="mobile-menu">
+<span></span><span></span><span></span>
+</div>
+<nav id="nav-menu">
+<ul>
+<li><a class="nav-link" href="#about">About</a></li>
+<li><a class="nav-link" href="#journey">Journey</a></li>
+<li><a class="nav-link" href="#skills">Skills</a></li>
+<li><a class="nav-link" href="#projects">Projects</a></li>
+<li><a class="nav-link" href="#resume">Resume</a></li>
+<li><a class="nav-link contact-btn" href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- ========== HERO ========== -->
+<section class="tech-hero" id="hero">
+<div class="tech-grid-bg"></div>
+<div class="hero-bg-shapes">
+<div class="shape shape-1"></div>
+<div class="shape shape-2"></div>
+<div class="shape shape-3"></div>
+</div>
+<div class="container hero-content tech-hero-content">
+<div class="hero-left">
+<div class="hero-eyebrow tech-pill">
+<span class="pulse-dot"></span> AI &amp; Data Science Portfolio
                 </div>
-
-                <h1 class="hero-name glitch-title" data-text="Bhargava Sood">
+<h1 class="hero-name glitch-title" data-text="Bhargava Sood">
                     Hi, I'm <span>Bhargava Sood</span>
-                </h1>
-
-                <div class="hero-typed-wrapper terminal-line">
-                    <span class="terminal-prompt">bhargava@portfolio:~$</span>
-                    <span class="hero-typed-prefix"> building </span>
-                    <span class="typed-text" data-strings='["machine learning projects", "data analytics dashboards", "AI-powered web apps", "clean frontend interfaces"]'></span>
-                    <span class="fake-cursor">|</span>
-                </div>
-
-                <p class="hero-tagline">
-                    I convert raw datasets into dashboards, ML pipelines, and web interfaces that actually look like tech work, not random college assignment pages.
-                </p>
-
-                <div class="hero-stats">
-                    <div><strong>10</strong><span>GitHub Repos</span></div>
-                    <div><strong>AI&DS</strong><span>B.Tech Focus</span></div>
-                    <div><strong>ML</strong><span>Core Track</span></div>
-                </div>
-
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">Explore Projects <i class="fas fa-arrow-right"></i></a>
-                    <a href="#skills" class="btn btn-outline">View Skills Stack</a>
-                </div>
-            </div>
-
-            <div class="hero-right">
-                <div class="tech-dashboard-card">
-                    <div class="dashboard-top">
-                        <span></span><span></span><span></span>
-                        <p>portfolio.engine</p>
-                    </div>
-                    <div class="scanner-line"></div>
-                    <pre><code>class Developer:
-    name = "Bhargava Sood"
-    domain = "AI & Data Science"
-    stack = ["Python", "SQL", "ML", "Web"]
-    goal = "Build useful tech products"</code></pre>
-                    <div class="dashboard-metrics">
-                        <div><span>Python</span><b>90%</b></div>
-                        <div><span>ML</span><b>70%</b></div>
-                        <div><span>GitHub</span><b>80%</b></div>
-                    </div>
-                </div>
-                <div class="floating-tech tech-python">Python</div>
-                <div class="floating-tech tech-ml">ML</div>
-                <div class="floating-tech tech-sql">SQL</div>
-                <div class="floating-tech tech-ai">AI</div>
-            </div>
-        </div>
-
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
-    <!-- ========== ABOUT ========== -->
-    <section id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Who am I</span>
-                <h2>About Me</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-img-wrapper">
-                    <!-- 🔧 CHANGE: Replace the src with your photo path, e.g. assets/photo.jpg -->
-                    <div class="about-img-placeholder">
-                        <img src="Photos/Bhargava photo.png" alt="Bhargava Sood">
-                    </div>
-                    <div class="about-badge">
-                        <!-- 🔧 CHANGE: Update your year of study / experience level -->
-                        <span class="badge-num">2+</span>
-                        <span class="badge-label">Years of<br>Learning</span>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h3>A quick intro about me</h3>
-                    <!-- 🔧 CHANGE: Edit all three paragraphs below with your bio -->
-                    <p>Hello! I'm <strong>[Bhargava Sood]</strong>, a <strong>[Machine Learning Engineer and Data Analyst ]</strong> passionate about building responsive and user-friendly digital experiences. I specialize in <strong>[Artificial Intelligence and Data Science]</strong> but also have experience with <strong>[Python, SQL, Machine Learning Algorithms,Data Visualization, Photography and Videography]</strong>.</p>
-                    <p>When I'm not coding, you can find me <strong>[reading a tech blog, exploring new framework, Solving a real life problems]</strong>. I believe in continuous learning and always stay updated with the latest technologies.</p>
-                    <p>My goal is to <strong>[Solving a real life problems using the technicals things which help us to brainstroming as well as in coding too]</strong> — creating solutions that are not only visually appealing but also accessible and intuitive for all users.</p>
-                    <div class="about-details">
-                        <!-- 🔧 CHANGE: Fill in your personal details below -->
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span><strong>Location:</strong> Delhi, India</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <span><strong>Email:</strong>Bhargavasood5@gmail.com</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span><strong>Degree:</strong>  B.Tech AI&DS</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-circle" style="color:#4ade80"></i>
-                            <span><strong>Status:</strong> Open to Opportunities</span>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn btn-primary">Let's Connect <i class="fas fa-paper-plane"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ========== JOURNEY ========== -->
-    <section id="journey" class="journey-lab">
-        <div class="container">
-            <div class="section-header journey-header">
-                <span class="section-tag">Execution Timeline</span>
-                <h2>My Journey</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Education, certifications and hands-on experience presented like a tech roadmap.</p>
-            </div>
-
-            <div class="journey-console" aria-label="Journey summary">
-                <div class="journey-console-top">
-                    <div class="console-dots"><span></span><span></span><span></span></div>
-                    <code>journey.compile(profile)</code>
-                    <span class="console-status"><i class="fas fa-circle"></i> active</span>
-                </div>
-                <div class="journey-console-grid">
-                    <div class="journey-stat-card">
-                        <span>TRACK</span>
-                        <strong>AI & Data Science</strong>
-                    </div>
-                    <div class="journey-stat-card">
-                        <span>MODE</span>
-                        <strong>Learning + Building</strong>
-                    </div>
-                    <div class="journey-stat-card">
-                        <span>FOCUS</span>
-                        <strong>ML, Analytics, Web</strong>
-                    </div>
-                </div>
-            </div>
-
-            <div class="journey-columns">
-                <!-- LEFT: Education -->
-                <div class="journey-part education" data-track="01">
-                    <div class="journey-part-header">
-                        <div class="journey-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div>
-                            <h3>Education</h3>
-                            <p class="track-subtitle">Academic foundation and core technical base</p>
-                        </div>
-                        <span class="journey-track-num">01</span>
-                    </div>
-
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">2024 - 2028</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>B.Tech in Artificial Intelligence & Data Science</h4>
-                                    <span class="level-tag">Current</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-university"></i> Jagannath Institute of Studies and Management</p>
-                                <div class="journey-mini-tags">
-                                    <span>AI&DS</span><span>ML</span><span>NLP</span><span>RAG</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Building core understanding in AI, machine learning, NLP, LLM concepts and data-driven problem solving. Current focus is converting academic learning into usable projects and portfolio-grade implementations.</p>
-                                    <ul class="journey-points">
-                                        <li>Learning deep learning, NLP and NLTK fundamentals.</li>
-                                        <li>Exploring LLM and RAG-based application workflows.</li>
-                                        <li>Strong academic performance with 9 SGPA in 3rd semester.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">2023 - 2024</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Senior Secondary, Science Stream</h4>
-                                    <span class="level-tag">Class 12</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-school"></i> GHPS Nanak Piao, CBSE Board</p>
-                                <div class="journey-mini-tags">
-                                    <span>Science</span><span>ATL</span><span>Top 5</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Completed senior secondary education with a science background and participated in school-level innovation activities.</p>
-                                    <ul class="journey-points">
-                                        <li>Scored 350/500 in Class 12.</li>
-                                        <li>Ranked among the top 5 students in class.</li>
-                                        <li>Member of Atal Tinkering Lab activities.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">2021 - 2022</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Secondary Education</h4>
-                                    <span class="level-tag">Class 10</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-school"></i> GHPS Nanak Piao, CBSE Board</p>
-                                <div class="journey-mini-tags">
-                                    <span>Foundation</span><span>Maths</span><span>Medal</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Built academic discipline and problem-solving habits during secondary education.</p>
-                                    <ul class="journey-points">
-                                        <li>Scored 320/500 in Class 10.</li>
-                                        <li>Ranked among the top 10 students in class.</li>
-                                        <li>Won a Gold Medal in Vedic Maths at a national event.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CENTER: Courses & Certifications -->
-                <div class="journey-part courses" data-track="02">
-                    <div class="journey-part-header">
-                        <div class="journey-icon"><i class="fas fa-award"></i></div>
-                        <div>
-                            <h3>Courses</h3>
-                            <p class="track-subtitle">Certifications and structured skill upgrades</p>
-                        </div>
-                        <span class="journey-track-num">02</span>
-                    </div>
-
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">October 2025</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Value Added Course in Core Python</h4>
-                                    <span class="level-tag">Python</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-building"></i> JIMS Greater Noida</p>
-                                <div class="journey-mini-tags">
-                                    <span>OOP</span><span>Python</span><span>Logic</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Completed a structured course focused on Object-Oriented Programming with Python and practical programming fundamentals.</p>
-                                    <ul class="journey-points">
-                                        <li>Strengthened Python syntax and OOP concepts.</li>
-                                        <li>Improved code organization and logic building.</li>
-                                        <li>Useful base for ML, automation and data analysis work.</li>
-                                    </ul>
-                                    <a href="assets/Value added course in Core python.svg" class="cert-btn" target="_blank"><i class="fas fa-certificate"></i> View Certificate</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">April 2026</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Vande Mataram, 150 Years Quiz</h4>
-                                    <span class="level-tag">Quiz</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-building"></i> Ministry of Culture and MyGov</p>
-                                <div class="journey-mini-tags">
-                                    <span>Participation</span><span>Knowledge</span><span>Culture</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Participated in the Vande Mataram, 150 Years Quiz and added another milestone to the certification journey.</p>
-                                    <ul class="journey-points">
-                                        <li>Expanded general awareness and cultural knowledge.</li>
-                                        <li>Completed the quiz under a national-level initiative.</li>
-                                        <li>Added participation credential to the portfolio.</li>
-                                    </ul>
-                                    <a href="assets/Vande Mataram 150 years of quiz.svg" class="cert-btn" target="_blank"><i class="fas fa-certificate"></i> View Certificate</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">May 2026</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Top Prompt Creator, Game Night Edition</h4>
-                                    <span class="level-tag">Google</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-building"></i> Google Student Ambassador Program</p>
-                                <div class="journey-mini-tags">
-                                    <span>Prompting</span><span>AI</span><span>Recognition</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Recognized as a Top Prompt Creator during the Game Night edition under the Google Ambassador student program.</p>
-                                    <ul class="journey-points">
-                                        <li>Applied prompt-writing skills in a competitive activity.</li>
-                                        <li>Showed creative AI interaction and structured thinking.</li>
-                                        <li>Useful credential for AI-focused portfolio positioning.</li>
-                                    </ul>
-                                    <a href="assets/Top prompt creator (GSA'26).svg" class="cert-btn" target="_blank"><i class="fas fa-certificate"></i> View Certificate</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT: Internships / Experience -->
-                <div class="journey-part internships" data-track="03">
-                    <div class="journey-part-header">
-                        <div class="journey-icon"><i class="fas fa-briefcase"></i></div>
-                        <div>
-                            <h3>Experience</h3>
-                            <p class="track-subtitle">Leadership, internship and mentoring work</p>
-                        </div>
-                        <span class="journey-track-num">03</span>
-                    </div>
-
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">August 2024 - Present</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Chief Executive Officer</h4>
-                                    <span class="level-tag">Leadership</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-building"></i> SnapEDcode Campus</p>
-                                <div class="journey-mini-tags">
-                                    <span>CEO</span><span>Content</span><span>Community</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Leading SnapEDcode Campus as CEO, Content Manager and YouTube Creator since 2024.</p>
-                                    <ul class="journey-points">
-                                        <li>Building the platform from scratch.</li>
-                                        <li>Managing content, community and student-focused learning.</li>
-                                        <li>Creating programming content in a simpler and practical format.</li>
-                                    </ul>
-                                    <a href="assets/SnapEDcode campus.svg" class="cert-btn" target="_blank"><i class="fas fa-certificate"></i> View Offer Letter</a>
-                                    <a href="https://www.youtube.com/@SnapEDcodeCampus" class="cert-btn" target="_blank"><i class="fab fa-youtube"></i> YouTube Channel</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">December 2025 - March 2026</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Engagement App Intern</h4>
-                                    <span class="level-tag">Internship</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-building"></i> Bharti Airtel Foundation</p>
-                                <div class="journey-mini-tags">
-                                    <span>Research</span><span>Analysis</span><span>Education</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Selected for an Academic Internship focused on structured project work, research, analysis and recommendations for TheTeacherApp ecosystem.</p>
-                                    <ul class="journey-points">
-                                        <li>Worked around education impact and engagement workflows.</li>
-                                        <li>Contributed through research and structured analysis.</li>
-                                        <li>Built exposure to real project documentation and recommendations.</li>
-                                    </ul>
-                                    <a href="assets/Bharti Airtel Foundation.svg" class="cert-btn" target="_blank"><i class="fas fa-certificate"></i> View Offer Letter</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">December 2025 - March 2026</div>
-                            <div class="timeline-content">
-                                <div class="timeline-title-row">
-                                    <h4>Student Mentor</h4>
-                                    <span class="level-tag">Mentor</span>
-                                </div>
-                                <p class="timeline-org"><i class="fas fa-building"></i> ECWoC, Elite Coders World of Code</p>
-                                <div class="journey-mini-tags">
-                                    <span>Mentoring</span><span>Open Source</span><span>Guidance</span>
-                                </div>
-                                <button class="read-more-btn" aria-expanded="false">Details <i class="fas fa-chevron-down"></i></button>
-                                <div class="details">
-                                    <p>Selected as a Mentor for ECWoC 2026 to support learners and contribute to a developer-focused community.</p>
-                                    <ul class="journey-points">
-                                        <li>Guiding aspiring developers with practical direction.</li>
-                                        <li>Supporting collaborative learning and project-based growth.</li>
-                                        <li>Sharing technical insights aligned with industry expectations.</li>
-                                    </ul>
-                                    <a href="assets/ECWOC 2026.svg" class="cert-btn" target="_blank"><i class="fas fa-certificate"></i> View Identity Card</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ========== SKILLS ========== -->
-    <section id="skills" class="tech-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Technical Skills</span>
-                <h2>Tech Stack & Core Skills</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Click each box to open detailed key points. Ye section ab proper dropdown ke saath work karega.</p>
-            </div>
-
-            <div class="skills-grid tech-skills-grid">
-                <article class="skill-card tech-skill-card">
-                    <div class="skill-top-row">
-                        <div class="skill-icon neon-icon"><i class="fab fa-python"></i></div>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <h3>Programming Languages</h3>
-                    <p class="skill-short">Core logic, scripting, data handling, and frontend basics.</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
-                    <button class="skill-details-btn" type="button" aria-expanded="false">Open Details <i class="fas fa-chevron-down"></i></button>
-                    <div class="skill-details" role="region">
-                        <div class="skills-list">
-                            <span class="skill-chip"><span class="dot"></span>Python</span>
-                            <span class="skill-chip"><span class="dot"></span>SQL</span>
-                            <span class="skill-chip"><span class="dot"></span>C</span>
-                            <span class="skill-chip"><span class="dot"></span>Java</span>
-                            <span class="skill-chip"><span class="dot"></span>JavaScript</span>
-                            <span class="skill-chip"><span class="dot"></span>OOP in Java</span>
-                        </div>
-                        <ul class="skill-points">
-                            <li>Python for data cleaning, automation, and ML model workflows.</li>
-                            <li>SQL for filtering, joins, grouping, and dataset querying.</li>
-                            <li>JavaScript for interactive UI behavior like forms, sliders, and project scrolling.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="skill-card tech-skill-card">
-                    <div class="skill-top-row">
-                        <div class="skill-icon neon-icon"><i class="fas fa-cubes"></i></div>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <h3>Python Libraries</h3>
-                    <p class="skill-short">Libraries used for analysis, preprocessing, and ML pipelines.</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
-                    <button class="skill-details-btn" type="button" aria-expanded="false">Open Details <i class="fas fa-chevron-down"></i></button>
-                    <div class="skill-details" role="region">
-                        <div class="skills-list">
-                            <span class="skill-chip"><span class="dot"></span>Pandas</span>
-                            <span class="skill-chip"><span class="dot"></span>NumPy</span>
-                            <span class="skill-chip"><span class="dot"></span>Scikit-learn</span>
-                            <span class="skill-chip"><span class="dot"></span>Matplotlib</span>
-                            <span class="skill-chip"><span class="dot"></span>Seaborn</span>
-                        </div>
-                        <ul class="skill-points">
-                            <li>Pandas and NumPy for loading, cleaning, transforming, and merging datasets.</li>
-                            <li>Scikit-learn for train-test split, model fitting, prediction, and evaluation.</li>
-                            <li>Matplotlib and Seaborn for project-level visual analysis.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="skill-card tech-skill-card">
-                    <div class="skill-top-row">
-                        <div class="skill-icon neon-icon"><i class="fas fa-chart-line"></i></div>
-                        <span class="skill-percent">75%</span>
-                    </div>
-                    <h3>Data Visualization</h3>
-                    <p class="skill-short">Charts that explain insights clearly instead of only decorating notebooks.</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
-                    <button class="skill-details-btn" type="button" aria-expanded="false">Open Details <i class="fas fa-chevron-down"></i></button>
-                    <div class="skill-details" role="region">
-                        <div class="skills-list">
-                            <span class="skill-chip"><span class="dot"></span>Tableau Public</span>
-                            <span class="skill-chip"><span class="dot"></span>Matplotlib</span>
-                            <span class="skill-chip"><span class="dot"></span>Seaborn</span>
-                            <span class="skill-chip"><span class="dot"></span>Excel Charts</span>
-                        </div>
-                        <ul class="skill-points">
-                            <li>Univariate and bivariate analysis for EDA reports.</li>
-                            <li>Correlation heatmaps, histograms, bar plots, and distribution charts.</li>
-                            <li>Dashboard-style visuals for non-technical explanation.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="skill-card tech-skill-card">
-                    <div class="skill-top-row">
-                        <div class="skill-icon neon-icon"><i class="fas fa-brain"></i></div>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p class="skill-short">End-to-end ML flow from raw data to prediction output.</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
-                    <button class="skill-details-btn" type="button" aria-expanded="false">Open Details <i class="fas fa-chevron-down"></i></button>
-                    <div class="skill-details" role="region">
-                        <div class="skills-list">
-                            <span class="skill-chip"><span class="dot"></span>Classification</span>
-                            <span class="skill-chip"><span class="dot"></span>Regression</span>
-                            <span class="skill-chip"><span class="dot"></span>Feature Engineering</span>
-                            <span class="skill-chip"><span class="dot"></span>EDA</span>
-                            <span class="skill-chip"><span class="dot"></span>Model Evaluation</span>
-                        </div>
-                        <ul class="skill-points">
-                            <li>Data cleaning, preprocessing, feature selection, and train-test split.</li>
-                            <li>Metrics: accuracy, precision, recall, F1-score, confusion matrix, ROC-AUC basics.</li>
-                            <li>Projects: crop recommendation, Titanic pipeline, e-commerce analysis.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="skill-card tech-skill-card">
-                    <div class="skill-top-row">
-                        <div class="skill-icon neon-icon"><i class="fas fa-square-root-alt"></i></div>
-                        <span class="skill-percent">65%</span>
-                    </div>
-                    <h3>Mathematics & Statistics</h3>
-                    <p class="skill-short">Math foundation required for ML, not random formula memorization.</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
-                    <button class="skill-details-btn" type="button" aria-expanded="false">Open Details <i class="fas fa-chevron-down"></i></button>
-                    <div class="skill-details" role="region">
-                        <div class="skills-list">
-                            <span class="skill-chip"><span class="dot"></span>Statistics</span>
-                            <span class="skill-chip"><span class="dot"></span>Probability</span>
-                            <span class="skill-chip"><span class="dot"></span>Hypothesis Testing</span>
-                            <span class="skill-chip"><span class="dot"></span>Linear Algebra</span>
-                            <span class="skill-chip"><span class="dot"></span>Distributions</span>
-                        </div>
-                        <ul class="skill-points">
-                            <li>Mean, median, variance, standard deviation, and distributions.</li>
-                            <li>Probability basics used in ML and model interpretation.</li>
-                            <li>Linear algebra foundation for vectors, matrices, and model calculations.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="skill-card tech-skill-card">
-                    <div class="skill-top-row">
-                        <div class="skill-icon neon-icon"><i class="fab fa-github"></i></div>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <h3>Tools & Environment</h3>
-                    <p class="skill-short">Tools used for coding, notebooks, version control, and deployment prep.</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
-                    <button class="skill-details-btn" type="button" aria-expanded="false">Open Details <i class="fas fa-chevron-down"></i></button>
-                    <div class="skill-details" role="region">
-                        <div class="skills-list">
-                            <span class="skill-chip"><span class="dot"></span>Git</span>
-                            <span class="skill-chip"><span class="dot"></span>GitHub</span>
-                            <span class="skill-chip"><span class="dot"></span>VS Code</span>
-                            <span class="skill-chip"><span class="dot"></span>Jupyter Notebook</span>
-                            <span class="skill-chip"><span class="dot"></span>Google Colab</span>
-                            <span class="skill-chip"><span class="dot"></span>Excel</span>
-                        </div>
-                        <ul class="skill-points">
-                            <li>GitHub repository management and project presentation.</li>
-                            <li>Colab and Jupyter for experiments, notebooks, and ML pipeline testing.</li>
-                            <li>VS Code for frontend, Python scripts, and portfolio development.</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-    <!-- ========== PROJECTS ========== -->
-    <section id="projects" class="tech-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">GitHub Projects</span>
-                <h2>Repository Showcase</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Use arrow buttons, mouse wheel, touch swipe, or the visible scrollbar to move left-right.</p>
-            </div>
-
-            <div class="project-toolbar">
-                <span><i class="fab fa-github"></i> 10 public repositories</span>
-                <span><i class="fas fa-code-branch"></i> HTML, Jupyter Notebook, TypeScript, JavaScript</span>
-            </div>
-
-            <div class="projects-wrapper tech-projects-wrapper">
-                <button class="scroll-btn left" id="scrollLeft" type="button" aria-label="Scroll projects left"><i class="fas fa-chevron-left"></i></button>
-
-                <div class="projects-container tech-project-scroller" id="projectsContainer" tabindex="0" aria-label="Scrollable GitHub project list">
-                    <article class="project-card tech-project-card featured-project">
-                        <div class="project-img-placeholder project-glow-purple">
-                            <i class="fas fa-id-card"></i>
-                            <span>Portfolio Website</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">Frontend Portfolio</div>
-                            <h3>Portfolio-</h3>
-                            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-                            <p>Personal portfolio website with About, Journey, Skills, Projects, Resume, and Contact sections.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/Portfolio-" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card featured-project">
-                        <div class="project-img-placeholder project-glow-green">
-                            <i class="fas fa-brain"></i>
-                            <span>Machine Learning</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">ML Notebooks</div>
-                            <h3>PROJECT-MACHINE-LEARNING-</h3>
-                            <div class="project-tags"><span class="tag">Jupyter</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Visualization</span></div>
-                            <p>Machine learning notebooks including crop recommendation and data analysis workflows.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/PROJECT-MACHINE-LEARNING-" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card featured-project">
-                        <div class="project-img-placeholder project-glow-blue">
-                            <i class="fas fa-database"></i>
-                            <span>Internship Tasks</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">EDA + ML</div>
-                            <h3>Internships-Projects-</h3>
-                            <div class="project-tags"><span class="tag">Dataset</span><span class="tag">EDA</span><span class="tag">ML</span><span class="tag">Notebook</span></div>
-                            <p>Internship project tasks with datasets, preprocessing, EDA, visualization, and ML workflows.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/Internships-Projects-" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card">
-                        <div class="project-img-placeholder project-glow-cyan">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>AI Truth Shield</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">AI Product Concept</div>
-                            <h3>SATYA-GPT</h3>
-                            <div class="project-tags"><span class="tag">TypeScript</span><span class="tag">AI</span><span class="tag">Frontend</span></div>
-                            <p>AI-powered truth shield concept focused on scam detection, fake news checking, and safer browsing.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/SATYA-GPT" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card">
-                        <div class="project-img-placeholder project-glow-pink">
-                            <i class="fas fa-server"></i>
-                            <span>Backend API</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">Backend</div>
-                            <h3>SATYA-GPT-BACKEND</h3>
-                            <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">Backend</span><span class="tag">API</span></div>
-                            <p>Backend repository for SATYA-GPT, structured for API handling and application logic.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/SATYA-GPT-BACKEND" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card">
-                        <div class="project-img-placeholder project-glow-purple">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Viewer</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">API UI Practice</div>
-                            <h3>Gthub-profile-viewer-clone</h3>
-                            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-                            <p>GitHub profile viewer clone for searching and displaying GitHub profile and repository details.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/Gthub-profile-viewer-clone" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card">
-                        <div class="project-img-placeholder project-glow-blue">
-                            <i class="fas fa-user-astronaut"></i>
-                            <span>Profile README</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">GitHub Profile</div>
-                            <h3>Bhargavasood07</h3>
-                            <div class="project-tags"><span class="tag">README</span><span class="tag">Profile</span></div>
-                            <p>GitHub profile README repository used to present profile details, tools, and links.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/Bhargavasood07" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card">
-                        <div class="project-img-placeholder project-glow-green">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculator</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">JavaScript Logic</div>
-                            <h3>CALCULATOR.HTML</h3>
-                            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-                            <p>Basic calculator project demonstrating HTML structure, CSS styling, and JavaScript logic.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/CALCULATOR.HTML" class="btn btn-sm btn-primary" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card weak-repo">
-                        <div class="project-img-placeholder project-glow-muted">
-                            <i class="fas fa-folder-open"></i>
-                            <span>Utility Repo</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">Clean or Remove</div>
-                            <h3>bin</h3>
-                            <div class="project-tags"><span class="tag warning-tag">Weak Portfolio Repo</span></div>
-                            <p>Utility repository. Keep it only if it has meaningful code, otherwise remove it from portfolio.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/bin" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-
-                    <article class="project-card tech-project-card weak-repo">
-                        <div class="project-img-placeholder project-glow-muted">
-                            <i class="fas fa-file-code"></i>
-                            <span>HTML Practice</span>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-kicker">Clean or Remove</div>
-                            <h3>HTMLFILE</h3>
-                            <div class="project-tags"><span class="tag warning-tag">Practice Repo</span></div>
-                            <p>HTML practice repository. Use this only if the code is clean enough to show publicly.</p>
-                            <div class="project-links"><a href="https://github.com/Bhargavasood07/HTMLFILE" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
-                        </div>
-                    </article>
-                </div>
-
-                <button class="scroll-btn right" id="scrollRight" type="button" aria-label="Scroll projects right"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-    <!-- ========== RESUME ========== -->
-    <section id="resume">
-        <div class="resume-orbit resume-orbit-1"></div>
-        <div class="resume-orbit resume-orbit-2"></div>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Career Snapshot</span>
-                <h2>Resume Console</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">A clean summary of my education, skills, projects and technical direction.</p>
-            </div>
-
-            <div class="resume-shell">
-                <div class="resume-panel resume-main-card">
-                    <div class="resume-terminal-bar">
-                        <div class="terminal-dots"><span></span><span></span><span></span></div>
-                        <span class="resume-file-name">bhargava_resume.exe</span>
-                        <span class="resume-live"><i class="fas fa-circle"></i> Ready</span>
-                    </div>
-
-                    <div class="resume-profile-row">
-                        <div class="resume-avatar">
-                            <span>BS</span>
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="resume-profile-text">
-                            <span class="resume-label">Machine Learning Engineer • Data Analyst • Web Developer</span>
-                            <h3>Bhargava Sood</h3>
-                            <p>Focused on building data-driven products, ML workflows, dashboards, and frontend interfaces that turn raw information into usable digital solutions.</p>
-                        </div>
-                    </div>
-
-                    <div class="resume-metrics">
-                        <div class="resume-metric">
-                            <strong>AI&DS</strong>
-                            <span>B.Tech Track</span>
-                        </div>
-                        <div class="resume-metric">
-                            <strong>ML</strong>
-                            <span>Core Focus</span>
-                        </div>
-                        <div class="resume-metric">
-                            <strong>Projects</strong>
-                            <span>GitHub Ready</span>
-                        </div>
-                    </div>
-
-                    <div class="resume-actions">
-                        <a href="ref/bhargava resume.pdf" class="btn btn-primary btn-lg resume-download-btn" id="resume-btn" download="Bhargava-Sood-Resume.pdf">
-                            <i class="fas fa-download"></i> Download Resume
+</h1>
+<div class="hero-typed-wrapper terminal-line">
+<span class="terminal-prompt">Focused on:</span>
+<span class="hero-typed-prefix"> </span>
+<span class="typed-text" data-strings='["Machine Learning", "Data Analytics", "Frontend Projects", "Python Development"]'></span>
+<span class="fake-cursor">|</span>
+</div>
+<p class="hero-tagline">I am an AI &amp; Data Science student focused on machine learning, data analytics and clean web interfaces.</p>
+<div class="hero-stats">
+<div><strong>6+</strong><span>Selected Projects</span></div>
+<div><strong>AI&amp;DS</strong><span>B.Tech Student</span></div>
+<div><strong>ML</strong><span>Learning Track</span></div>
+</div>
+<div class="hero-cta">
+<a class="btn btn-primary" href="#projects">View Projects <i class="fas fa-arrow-right"></i></a>
+<a class="btn btn-outline" href="#resume">Download Resume</a>
+</div>
+</div>
+<div class="hero-right">
+<div class="tech-dashboard-card">
+<div class="profile-card-top">
+<span class="profile-dot"></span>
+<p>Profile Snapshot</p>
+</div>
+<div class="profile-card-body">
+<h3>Bhargava Sood</h3>
+<p>AI &amp; Data Science student building practical projects in ML, analytics and frontend development.</p>
+<div class="profile-card-list">
+<span><i class="fas fa-code"></i> Python, SQL, JavaScript</span>
+<span><i class="fas fa-chart-line"></i> EDA and visualization</span>
+<span><i class="fab fa-github"></i> GitHub project portfolio</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="scroll-indicator">
+<span></span>
+</div>
+</section>
+<!-- ========== ABOUT ========== -->
+<section id="about">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Who am I</span>
+<h2>About Me</h2>
+<div class="section-divider"></div>
+</div>
+<div class="about-content">
+<div class="about-img-wrapper">
+<!-- 🔧 CHANGE: Replace the src with your photo path, e.g. assets/photo.jpg -->
+<div class="about-img-placeholder">
+<img alt="Bhargava Sood" src="Photos/Bhargava photo.png"/>
+</div>
+<div class="about-badge">
+<!-- 🔧 CHANGE: Update your year of study / experience level -->
+<span class="badge-num">2+</span>
+<span class="badge-label">Years of<br/>Learning</span>
+</div>
+</div>
+<div class="about-text">
+<h3>A quick intro about me</h3>
+<!-- 🔧 CHANGE: Edit all three paragraphs below with your bio -->
+<p>Hello! I'm <strong>[Bhargava Sood]</strong>, a <strong>[Machine Learning Engineer and Data Analyst ]</strong> passionate about building responsive and user-friendly digital experiences. I specialize in <strong>[Artificial Intelligence and Data Science]</strong> but also have experience with <strong>[Python, SQL, Machine Learning Algorithms,Data Visualization, Photography and Videography]</strong>.</p>
+<p>When I'm not coding, you can find me <strong>[reading a tech blog, exploring new framework, Solving a real life problems]</strong>. I believe in continuous learning and always stay updated with the latest technologies.</p>
+<p>My goal is to <strong>[Solving a real life problems using the technicals things which help us to brainstroming as well as in coding too]</strong> — creating solutions that are not only visually appealing but also accessible and intuitive for all users.</p>
+<div class="about-details">
+<!-- 🔧 CHANGE: Fill in your personal details below -->
+<div class="detail-item">
+<i class="fas fa-map-marker-alt"></i>
+<span><strong>Location:</strong> Delhi, India</span>
+</div>
+<div class="detail-item">
+<i class="fas fa-envelope"></i>
+<span><strong>Email:</strong>Bhargavasood5@gmail.com</span>
+</div>
+<div class="detail-item">
+<i class="fas fa-graduation-cap"></i>
+<span><strong>Degree:</strong>  B.Tech AI&amp;DS</span>
+</div>
+<div class="detail-item">
+<i class="fas fa-circle" style="color:#4ade80"></i>
+<span><strong>Status:</strong> Open to Opportunities</span>
+</div>
+</div>
+<a class="btn btn-primary" href="#contact">Let's Connect <i class="fas fa-paper-plane"></i></a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== JOURNEY ========== -->
+<section class="journey-lab" id="journey">
+<div class="container">
+<div class="section-header journey-header">
+<span class="section-tag">Execution Timeline</span>
+<h2>My Journey</h2>
+<div class="section-divider"></div>
+<p class="section-subtitle">Education, certifications and experience presented in a clean timeline.</p>
+</div>
+<div aria-label="Journey summary" class="journey-console">
+<div class="journey-console-top">
+<div class="console-dots"><span></span><span></span><span></span></div>
+<code>Timeline Summary</code>
+<span class="console-status"><i class="fas fa-circle"></i> Updated</span>
+</div>
+<div class="journey-console-grid">
+<div class="journey-stat-card">
+<span>TRACK</span>
+<strong>AI &amp; Data Science</strong>
+</div>
+<div class="journey-stat-card">
+<span>MODE</span>
+<strong>Learning + Building</strong>
+</div>
+<div class="journey-stat-card">
+<span>FOCUS</span>
+<strong>ML, Analytics, Web</strong>
+</div>
+</div>
+</div>
+<div class="journey-columns">
+<!-- LEFT: Education -->
+<div class="journey-part education" data-track="01">
+<div class="journey-part-header">
+<div class="journey-icon"><i class="fas fa-graduation-cap"></i></div>
+<div>
+<h3>Education</h3>
+<p class="track-subtitle">Academic foundation and core technical base</p>
+</div>
+<span class="journey-track-num">01</span>
+</div>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2024 - 2028</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>B.Tech in Artificial Intelligence &amp; Data Science</h4>
+<span class="level-tag">Current</span>
+</div>
+<p class="timeline-org"><i class="fas fa-university"></i> Jagannath Institute of Studies and Management</p>
+<div class="journey-mini-tags">
+<span>AI&amp;DS</span><span>ML</span><span>NLP</span><span>RAG</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Building core understanding in AI, machine learning, NLP, LLM concepts and data-driven problem solving. Current focus is converting academic learning into usable projects and portfolio-grade implementations.</p>
+<ul class="journey-points">
+<li>Learning deep learning, NLP and NLTK fundamentals.</li>
+<li>Exploring LLM and RAG-based application workflows.</li>
+<li>Strong academic performance with 9 SGPA in 3rd semester.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2023 - 2024</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Senior Secondary, Science Stream</h4>
+<span class="level-tag">Class 12</span>
+</div>
+<p class="timeline-org"><i class="fas fa-school"></i> GHPS Nanak Piao, CBSE Board</p>
+<div class="journey-mini-tags">
+<span>Science</span><span>ATL</span><span>Top 5</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Completed senior secondary education with a science background and participated in school-level innovation activities.</p>
+<ul class="journey-points">
+<li>Scored 350/500 in Class 12.</li>
+<li>Ranked among the top 5 students in class.</li>
+<li>Member of Atal Tinkering Lab activities.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2021 - 2022</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Secondary Education</h4>
+<span class="level-tag">Class 10</span>
+</div>
+<p class="timeline-org"><i class="fas fa-school"></i> GHPS Nanak Piao, CBSE Board</p>
+<div class="journey-mini-tags">
+<span>Foundation</span><span>Maths</span><span>Medal</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Built academic discipline and problem-solving habits during secondary education.</p>
+<ul class="journey-points">
+<li>Scored 320/500 in Class 10.</li>
+<li>Ranked among the top 10 students in class.</li>
+<li>Won a Gold Medal in Vedic Maths at a national event.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CENTER: Courses & Certifications -->
+<div class="journey-part courses" data-track="02">
+<div class="journey-part-header">
+<div class="journey-icon"><i class="fas fa-award"></i></div>
+<div>
+<h3>Courses</h3>
+<p class="track-subtitle">Certifications and structured skill upgrades</p>
+</div>
+<span class="journey-track-num">02</span>
+</div>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">October 2025</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Value Added Course in Core Python</h4>
+<span class="level-tag">Python</span>
+</div>
+<p class="timeline-org"><i class="fas fa-building"></i> JIMS Greater Noida</p>
+<div class="journey-mini-tags">
+<span>OOP</span><span>Python</span><span>Logic</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Completed a structured course focused on Object-Oriented Programming with Python and practical programming fundamentals.</p>
+<ul class="journey-points">
+<li>Strengthened Python syntax and OOP concepts.</li>
+<li>Improved code organization and logic building.</li>
+<li>Useful base for ML, automation and data analysis work.</li>
+</ul>
+<a class="cert-btn" href="assets/Value added course in Core python.svg" target="_blank"><i class="fas fa-certificate"></i> View Certificate</a>
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">April 2026</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Vande Mataram, 150 Years Quiz</h4>
+<span class="level-tag">Quiz</span>
+</div>
+<p class="timeline-org"><i class="fas fa-building"></i> Ministry of Culture and MyGov</p>
+<div class="journey-mini-tags">
+<span>Participation</span><span>Knowledge</span><span>Culture</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Participated in the Vande Mataram, 150 Years Quiz and added another milestone to the certification journey.</p>
+<ul class="journey-points">
+<li>Expanded general awareness and cultural knowledge.</li>
+<li>Completed the quiz under a national-level initiative.</li>
+<li>Added participation credential to the portfolio.</li>
+</ul>
+<a class="cert-btn" href="assets/Vande Mataram 150 years of quiz.svg" target="_blank"><i class="fas fa-certificate"></i> View Certificate</a>
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">May 2026</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Top Prompt Creator, Game Night Edition</h4>
+<span class="level-tag">Google</span>
+</div>
+<p class="timeline-org"><i class="fas fa-building"></i> Google Student Ambassador Program</p>
+<div class="journey-mini-tags">
+<span>Prompting</span><span>AI</span><span>Recognition</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Recognized as a Top Prompt Creator during the Game Night edition under the Google Ambassador student program.</p>
+<ul class="journey-points">
+<li>Applied prompt-writing skills in a competitive activity.</li>
+<li>Showed creative AI interaction and structured thinking.</li>
+<li>Useful credential for AI-focused portfolio positioning.</li>
+</ul>
+<a class="cert-btn" href="assets/Top prompt creator (GSA'26).svg" target="_blank"><i class="fas fa-certificate"></i> View Certificate</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: Internships / Experience -->
+<div class="journey-part internships" data-track="03">
+<div class="journey-part-header">
+<div class="journey-icon"><i class="fas fa-briefcase"></i></div>
+<div>
+<h3>Experience</h3>
+<p class="track-subtitle">Leadership, internship and mentoring work</p>
+</div>
+<span class="journey-track-num">03</span>
+</div>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">August 2024 - Present</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Chief Executive Officer</h4>
+<span class="level-tag">Leadership</span>
+</div>
+<p class="timeline-org"><i class="fas fa-building"></i> SnapEDcode Campus</p>
+<div class="journey-mini-tags">
+<span>CEO</span><span>Content</span><span>Community</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Leading SnapEDcode Campus as CEO, Content Manager and YouTube Creator since 2024.</p>
+<ul class="journey-points">
+<li>Building the platform from scratch.</li>
+<li>Managing content, community and student-focused learning.</li>
+<li>Creating programming content in a simpler and practical format.</li>
+</ul>
+<a class="cert-btn" href="assets/SnapEDcode campus.svg" target="_blank"><i class="fas fa-certificate"></i> View Offer Letter</a>
+<a class="cert-btn" href="https://www.youtube.com/@SnapEDcodeCampus" target="_blank"><i class="fab fa-youtube"></i> YouTube Channel</a>
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">December 2025 - March 2026</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Engagement App Intern</h4>
+<span class="level-tag">Internship</span>
+</div>
+<p class="timeline-org"><i class="fas fa-building"></i> Bharti Airtel Foundation</p>
+<div class="journey-mini-tags">
+<span>Research</span><span>Analysis</span><span>Education</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Selected for an Academic Internship focused on structured project work, research, analysis and recommendations for TheTeacherApp ecosystem.</p>
+<ul class="journey-points">
+<li>Worked around education impact and engagement workflows.</li>
+<li>Contributed through research and structured analysis.</li>
+<li>Built exposure to real project documentation and recommendations.</li>
+</ul>
+<a class="cert-btn" href="assets/Bharti Airtel Foundation.svg" target="_blank"><i class="fas fa-certificate"></i> View Offer Letter</a>
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-date">December 2025 - March 2026</div>
+<div class="timeline-content">
+<div class="timeline-title-row">
+<h4>Student Mentor</h4>
+<span class="level-tag">Mentor</span>
+</div>
+<p class="timeline-org"><i class="fas fa-building"></i> ECWoC, Elite Coders World of Code</p>
+<div class="journey-mini-tags">
+<span>Mentoring</span><span>Open Source</span><span>Guidance</span>
+</div>
+<button aria-expanded="false" class="read-more-btn">Details <i class="fas fa-chevron-down"></i></button>
+<div class="details">
+<p>Selected as a Mentor for ECWoC 2026 to support learners and contribute to a developer-focused community.</p>
+<ul class="journey-points">
+<li>Guiding aspiring developers with practical direction.</li>
+<li>Supporting collaborative learning and project-based growth.</li>
+<li>Sharing technical insights aligned with industry expectations.</li>
+</ul>
+<a class="cert-btn" href="assets/ECWOC 2026.svg" target="_blank"><i class="fas fa-certificate"></i> View Identity Card</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== SKILLS ========== -->
+<section class="tech-section" id="skills">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Technical Skills</span>
+<h2>Tech Stack &amp; Core Skills</h2>
+<div class="section-divider"></div>
+<p class="section-subtitle">Click each box to open detailed key points. Ye section ab proper dropdown ke saath work karega.</p>
+</div>
+<div class="skills-grid tech-skills-grid">
+<article class="skill-card tech-skill-card">
+<div class="skill-top-row">
+<div class="skill-icon neon-icon"><i class="fab fa-python"></i></div>
+<span class="skill-percent">90%</span>
+</div>
+<h3>Programming Languages</h3>
+<p class="skill-short">Core logic, scripting, data handling, and frontend basics.</p>
+<div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+<button aria-expanded="false" class="skill-details-btn" type="button">Open Details <i class="fas fa-chevron-down"></i></button>
+<div class="skill-details" role="region">
+<div class="skills-list">
+<span class="skill-chip"><span class="dot"></span>Python</span>
+<span class="skill-chip"><span class="dot"></span>SQL</span>
+<span class="skill-chip"><span class="dot"></span>C</span>
+<span class="skill-chip"><span class="dot"></span>Java</span>
+<span class="skill-chip"><span class="dot"></span>JavaScript</span>
+<span class="skill-chip"><span class="dot"></span>OOP in Java</span>
+</div>
+<ul class="skill-points">
+<li>Python for data cleaning, automation, and ML model workflows.</li>
+<li>SQL for filtering, joins, grouping, and dataset querying.</li>
+<li>JavaScript for interactive UI behavior like forms, sliders, and project scrolling.</li>
+</ul>
+</div>
+</article>
+<article class="skill-card tech-skill-card">
+<div class="skill-top-row">
+<div class="skill-icon neon-icon"><i class="fas fa-cubes"></i></div>
+<span class="skill-percent">85%</span>
+</div>
+<h3>Python Libraries</h3>
+<p class="skill-short">Libraries used for analysis, preprocessing, and ML pipelines.</p>
+<div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+<button aria-expanded="false" class="skill-details-btn" type="button">Open Details <i class="fas fa-chevron-down"></i></button>
+<div class="skill-details" role="region">
+<div class="skills-list">
+<span class="skill-chip"><span class="dot"></span>Pandas</span>
+<span class="skill-chip"><span class="dot"></span>NumPy</span>
+<span class="skill-chip"><span class="dot"></span>Scikit-learn</span>
+<span class="skill-chip"><span class="dot"></span>Matplotlib</span>
+<span class="skill-chip"><span class="dot"></span>Seaborn</span>
+</div>
+<ul class="skill-points">
+<li>Pandas and NumPy for loading, cleaning, transforming, and merging datasets.</li>
+<li>Scikit-learn for train-test split, model fitting, prediction, and evaluation.</li>
+<li>Matplotlib and Seaborn for project-level visual analysis.</li>
+</ul>
+</div>
+</article>
+<article class="skill-card tech-skill-card">
+<div class="skill-top-row">
+<div class="skill-icon neon-icon"><i class="fas fa-chart-line"></i></div>
+<span class="skill-percent">75%</span>
+</div>
+<h3>Data Visualization</h3>
+<p class="skill-short">Charts that explain insights clearly instead of only decorating notebooks.</p>
+<div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+<button aria-expanded="false" class="skill-details-btn" type="button">Open Details <i class="fas fa-chevron-down"></i></button>
+<div class="skill-details" role="region">
+<div class="skills-list">
+<span class="skill-chip"><span class="dot"></span>Tableau Public</span>
+<span class="skill-chip"><span class="dot"></span>Matplotlib</span>
+<span class="skill-chip"><span class="dot"></span>Seaborn</span>
+<span class="skill-chip"><span class="dot"></span>Excel Charts</span>
+</div>
+<ul class="skill-points">
+<li>Univariate and bivariate analysis for EDA reports.</li>
+<li>Correlation heatmaps, histograms, bar plots, and distribution charts.</li>
+<li>Dashboard-style visuals for non-technical explanation.</li>
+</ul>
+</div>
+</article>
+<article class="skill-card tech-skill-card">
+<div class="skill-top-row">
+<div class="skill-icon neon-icon"><i class="fas fa-brain"></i></div>
+<span class="skill-percent">70%</span>
+</div>
+<h3>Machine Learning</h3>
+<p class="skill-short">End-to-end ML flow from raw data to prediction output.</p>
+<div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+<button aria-expanded="false" class="skill-details-btn" type="button">Open Details <i class="fas fa-chevron-down"></i></button>
+<div class="skill-details" role="region">
+<div class="skills-list">
+<span class="skill-chip"><span class="dot"></span>Classification</span>
+<span class="skill-chip"><span class="dot"></span>Regression</span>
+<span class="skill-chip"><span class="dot"></span>Feature Engineering</span>
+<span class="skill-chip"><span class="dot"></span>EDA</span>
+<span class="skill-chip"><span class="dot"></span>Model Evaluation</span>
+</div>
+<ul class="skill-points">
+<li>Data cleaning, preprocessing, feature selection, and train-test split.</li>
+<li>Metrics: accuracy, precision, recall, F1-score, confusion matrix, ROC-AUC basics.</li>
+<li>Projects: crop recommendation, Titanic pipeline, e-commerce analysis.</li>
+</ul>
+</div>
+</article>
+<article class="skill-card tech-skill-card">
+<div class="skill-top-row">
+<div class="skill-icon neon-icon"><i class="fas fa-square-root-alt"></i></div>
+<span class="skill-percent">65%</span>
+</div>
+<h3>Mathematics &amp; Statistics</h3>
+<p class="skill-short">Math foundation required for ML, not random formula memorization.</p>
+<div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+<button aria-expanded="false" class="skill-details-btn" type="button">Open Details <i class="fas fa-chevron-down"></i></button>
+<div class="skill-details" role="region">
+<div class="skills-list">
+<span class="skill-chip"><span class="dot"></span>Statistics</span>
+<span class="skill-chip"><span class="dot"></span>Probability</span>
+<span class="skill-chip"><span class="dot"></span>Hypothesis Testing</span>
+<span class="skill-chip"><span class="dot"></span>Linear Algebra</span>
+<span class="skill-chip"><span class="dot"></span>Distributions</span>
+</div>
+<ul class="skill-points">
+<li>Mean, median, variance, standard deviation, and distributions.</li>
+<li>Probability basics used in ML and model interpretation.</li>
+<li>Linear algebra foundation for vectors, matrices, and model calculations.</li>
+</ul>
+</div>
+</article>
+<article class="skill-card tech-skill-card">
+<div class="skill-top-row">
+<div class="skill-icon neon-icon"><i class="fab fa-github"></i></div>
+<span class="skill-percent">80%</span>
+</div>
+<h3>Tools &amp; Environment</h3>
+<p class="skill-short">Tools used for coding, notebooks, version control, and deployment prep.</p>
+<div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+<button aria-expanded="false" class="skill-details-btn" type="button">Open Details <i class="fas fa-chevron-down"></i></button>
+<div class="skill-details" role="region">
+<div class="skills-list">
+<span class="skill-chip"><span class="dot"></span>Git</span>
+<span class="skill-chip"><span class="dot"></span>GitHub</span>
+<span class="skill-chip"><span class="dot"></span>VS Code</span>
+<span class="skill-chip"><span class="dot"></span>Jupyter Notebook</span>
+<span class="skill-chip"><span class="dot"></span>Google Colab</span>
+<span class="skill-chip"><span class="dot"></span>Excel</span>
+</div>
+<ul class="skill-points">
+<li>GitHub repository management and project presentation.</li>
+<li>Colab and Jupyter for experiments, notebooks, and ML pipeline testing.</li>
+<li>VS Code for frontend, Python scripts, and portfolio development.</li>
+</ul>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ========== PROJECTS ========== -->
+<section class="tech-section" id="projects">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">GitHub Projects</span>
+<h2>Selected Projects</h2>
+<div class="section-divider"></div>
+<p class="section-subtitle">A focused set of projects covering web development, data analysis and machine learning.</p>
+</div>
+<div class="project-toolbar">
+<span><i class="fab fa-github"></i> Selected GitHub work</span>
+<span><i class="fas fa-code-branch"></i> Web, ML and Data Analytics</span>
+</div>
+<div class="projects-wrapper tech-projects-wrapper">
+<button aria-label="Scroll projects left" class="scroll-btn left" id="scrollLeft" type="button"><i class="fas fa-chevron-left"></i></button>
+<div aria-label="Scrollable GitHub project list" class="projects-container tech-project-scroller" id="projectsContainer" tabindex="0">
+<article class="project-card tech-project-card featured-project">
+<div class="project-img-placeholder project-glow-purple">
+<i class="fas fa-id-card"></i>
+<span>Portfolio Website</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">Portfolio Website</div>
+<h3>Portfolio-</h3>
+<div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+<p>Personal portfolio website with About, Journey, Skills, Projects, Resume, and Contact sections.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/Portfolio-" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+<article class="project-card tech-project-card featured-project">
+<div class="project-img-placeholder project-glow-green">
+<i class="fas fa-brain"></i>
+<span>Machine Learning</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">Machine Learning</div>
+<h3>PROJECT-MACHINE-LEARNING-</h3>
+<div class="project-tags"><span class="tag">Jupyter</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Visualization</span></div>
+<p>Machine learning notebooks including crop recommendation and data analysis workflows.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/PROJECT-MACHINE-LEARNING-" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+<article class="project-card tech-project-card featured-project">
+<div class="project-img-placeholder project-glow-blue">
+<i class="fas fa-database"></i>
+<span>Internship Tasks</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">Data Projects</div>
+<h3>Internships-Projects-</h3>
+<div class="project-tags"><span class="tag">Dataset</span><span class="tag">EDA</span><span class="tag">ML</span><span class="tag">Notebook</span></div>
+<p>Internship project tasks with datasets, preprocessing, EDA, visualization, and ML workflows.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/Internships-Projects-" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+<article class="project-card tech-project-card">
+<div class="project-img-placeholder project-glow-cyan">
+<i class="fas fa-shield-alt"></i>
+<span>AI Truth Shield</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">AI Safety Project</div>
+<h3>SATYA-GPT</h3>
+<div class="project-tags"><span class="tag">TypeScript</span><span class="tag">AI</span><span class="tag">Frontend</span></div>
+<p>AI-powered truth shield concept focused on scam detection, fake news checking, and safer browsing.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/SATYA-GPT" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+<article class="project-card tech-project-card">
+<div class="project-img-placeholder project-glow-pink">
+<i class="fas fa-server"></i>
+<span>Backend API</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">Backend Work</div>
+<h3>SATYA-GPT-BACKEND</h3>
+<div class="project-tags"><span class="tag">JavaScript</span><span class="tag">Backend</span><span class="tag">API</span></div>
+<p>Backend repository for SATYA-GPT, structured for API handling and application logic.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/SATYA-GPT-BACKEND" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+<article class="project-card tech-project-card">
+<div class="project-img-placeholder project-glow-purple">
+<i class="fab fa-github"></i>
+<span>GitHub Viewer</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">Frontend Practice</div>
+<h3>Gthub-profile-viewer-clone</h3>
+<div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+<p>GitHub profile viewer clone for searching and displaying GitHub profile and repository details.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/Gthub-profile-viewer-clone" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+<article class="project-card tech-project-card">
+<div class="project-img-placeholder project-glow-blue">
+<i class="fas fa-user-astronaut"></i>
+<span>Profile README</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">Profile README</div>
+<h3>Bhargavasood07</h3>
+<div class="project-tags"><span class="tag">README</span><span class="tag">Profile</span></div>
+<p>GitHub profile README repository used to present profile details, tools, and links.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/Bhargavasood07" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+<article class="project-card tech-project-card">
+<div class="project-img-placeholder project-glow-green">
+<i class="fas fa-calculator"></i>
+<span>Calculator</span>
+</div>
+<div class="project-info">
+<div class="project-kicker">JavaScript Project</div>
+<h3>CALCULATOR.HTML</h3>
+<div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+<p>Basic calculator project demonstrating HTML structure, CSS styling, and JavaScript logic.</p>
+<div class="project-links"><a class="btn btn-sm btn-primary" href="https://github.com/Bhargavasood07/CALCULATOR.HTML" target="_blank"><i class="fab fa-github"></i> View Repo</a></div>
+</div>
+</article>
+</div>
+<button aria-label="Scroll projects right" class="scroll-btn right" id="scrollRight" type="button"><i class="fas fa-chevron-right"></i></button>
+</div>
+</div>
+</section>
+<!-- ========== RESUME ========== -->
+<section id="resume">
+<div class="resume-orbit resume-orbit-1"></div>
+<div class="resume-orbit resume-orbit-2"></div>
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Career Snapshot</span>
+<h2>Resume</h2>
+<div class="section-divider"></div>
+<p class="section-subtitle">A clean summary of my education, skills, projects and career focus.</p>
+</div>
+<div class="resume-shell">
+<div class="resume-panel resume-main-card">
+<div class="resume-terminal-bar">
+<div class="terminal-dots"><span></span><span></span><span></span></div>
+<span class="resume-file-name">Resume Summary</span>
+<span class="resume-live"><i class="fas fa-circle"></i> Available</span>
+</div>
+<div class="resume-profile-row">
+<div class="resume-avatar">
+<span>BS</span>
+<i class="fas fa-code"></i>
+</div>
+<div class="resume-profile-text">
+<span class="resume-label">AI &amp; Data Science Student | Machine Learning | Data Analytics | Web Development</span>
+<h3>Bhargava Sood</h3>
+<p>My resume summarizes education, technical skills, internships, certifications and selected projects in a clear format.</p>
+</div>
+</div>
+<div class="resume-metrics">
+<div class="resume-metric">
+<strong>AI&amp;DS</strong>
+<span>B.Tech Track</span>
+</div>
+<div class="resume-metric">
+<strong>ML</strong>
+<span>Core Focus</span>
+</div>
+<div class="resume-metric">
+<strong>Projects</strong>
+<span>GitHub Available</span>
+</div>
+</div>
+<div class="resume-actions">
+<a class="btn btn-primary btn-lg resume-download-btn" download="Bhargava-Sood-Resume.pdf" href="ref/bhargava resume.pdf" id="resume-btn">
+<i class="fas fa-download"></i> Download Resume
                         </a>
-                        <a href="ref/bhargava resume.pdf" class="btn btn-outline btn-lg resume-view-btn" target="_blank">
-                            <i class="fas fa-eye"></i> View Resume
+<a class="btn btn-outline btn-lg resume-view-btn" href="ref/bhargava resume.pdf" target="_blank">
+<i class="fas fa-eye"></i> View Resume
                         </a>
-                    </div>
-                </div>
-
-                <div class="resume-panel resume-side-card">
-                    <div class="resume-side-header">
-                        <i class="fas fa-layer-group"></i>
-                        <div>
-                            <span>Profile Stack</span>
-                            <h3>What the resume covers</h3>
-                        </div>
-                    </div>
-
-                    <div class="resume-stack-list">
-                        <div class="resume-stack-item">
-                            <i class="fas fa-brain"></i>
-                            <div>
-                                <strong>Machine Learning</strong>
-                                <span>EDA, preprocessing, model building, evaluation and prediction workflows.</span>
-                            </div>
-                        </div>
-                        <div class="resume-stack-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <strong>Data Analytics</strong>
-                                <span>Pandas, NumPy, visualization, insights, dashboards and reporting.</span>
-                            </div>
-                        </div>
-                        <div class="resume-stack-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <div>
-                                <strong>Web Projects</strong>
-                                <span>Responsive portfolio, SATYA-GPT frontend and GitHub project interfaces.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resume-chip-row">
-                        <span>Python</span>
-                        <span>SQL</span>
-                        <span>Scikit-learn</span>
-                        <span>GitHub</span>
-                        <span>Frontend</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ========== CONTACT ========== -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Say hello</span>
-                <h2>Contact Me</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Let's Talk</h3>
-                    <p>Have a project in mind, a question, or just want to say hi? I'd love to hear from you!</p>
-                    <div class="contact-details">
-                        <!-- 🔧 CHANGE: Fill in your contact details -->
-                        <div class="contact-detail-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <strong>Email</strong>
-                                <span>bhargavasood5@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="contact-detail-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div>
-                                <strong>Phone</strong>
-                                <span>+91 9891773680</span>
-                            </div>
-                        </div>
-                        <div class="contact-detail-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <strong>Location</strong>
-                                <span>Noida, Uttar Pradesh, India</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 🔧 CHANGE: Replace href values with your social media URLs -->
-                    <div class="social-links">
-                        <a href="https://github.com/Bhargavasood07" target="_blank" class="social-link github" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/bhargava-sood-5134b2306" target="_blank" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://x.com/BhargavaSo95996" target="_blank" class="social-link twitter" aria-label="X"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/yourusername" target="_blank" class="social-link instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@BhargavaSood-e2j" target="_blank" class="social-link youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="https://wa.me/919891773680" target="_blank" class="social-link whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper contact-console-card">
-                    <div class="form-terminal-bar" aria-hidden="true">
-                        <div class="terminal-dots"><span></span><span></span><span></span></div>
-                        <span class="terminal-title">secure_contact.form</span>
-                        <span class="terminal-status"><i class="fas fa-circle"></i> online</span>
-                    </div>
-                    <form id="contactForm" class="contact-form-pro">
-                        <div class="form-heading-row">
-                            <div>
-                                <span class="form-mini-tag">Response pipeline</span>
-                                <h3>Send a Message</h3>
-                            </div>
-                            <div class="form-code-chip">POST /connect</div>
-                        </div>
-                        <p class="form-intro">Project idea, internship opportunity, collaboration, or technical discussion ke liye clean message drop karo.</p>
-                        <div class="form-status-grid" aria-hidden="true">
-                            <span><i class="fas fa-bolt"></i> Fast reply</span>
-                            <span><i class="fas fa-lock"></i> Validated form</span>
-                            <span><i class="fas fa-code"></i> Tech focused</span>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name"><i class="fas fa-user"></i> Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="mobile"><i class="fas fa-phone"></i> Mobile</label>
-                                <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject"><i class="fas fa-tag"></i> Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message"><i class="fas fa-comment-alt"></i> Message</label>
-                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-                        </div>
-                        <button type="submit" id="submit-btn" class="btn btn-primary btn-block form-submit-pro">
-                            <i class="fas fa-paper-plane"></i> Send Message
+</div>
+</div>
+<div class="resume-panel resume-side-card">
+<div class="resume-side-header">
+<i class="fas fa-layer-group"></i>
+<div>
+<span>Skill Areas</span>
+<h3>What it covers</h3>
+</div>
+</div>
+<div class="resume-stack-list">
+<div class="resume-stack-item">
+<i class="fas fa-brain"></i>
+<div>
+<strong>Machine Learning</strong>
+<span>EDA, preprocessing, model building, evaluation and prediction workflows.</span>
+</div>
+</div>
+<div class="resume-stack-item">
+<i class="fas fa-chart-line"></i>
+<div>
+<strong>Data Analytics</strong>
+<span>Pandas, NumPy, visualization, insights, dashboards and reporting.</span>
+</div>
+</div>
+<div class="resume-stack-item">
+<i class="fas fa-laptop-code"></i>
+<div>
+<strong>Web Projects</strong>
+<span>Responsive portfolio, SATYA-GPT frontend and GitHub project interfaces.</span>
+</div>
+</div>
+</div>
+<div class="resume-chip-row">
+<span>Python</span>
+<span>SQL</span>
+<span>Scikit-learn</span>
+<span>GitHub</span>
+<span>Frontend</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Say hello</span>
+<h2>Contact Me</h2>
+<div class="section-divider"></div>
+</div>
+<div class="contact-wrapper">
+<div class="contact-info">
+<h3>Let's Talk</h3>
+<p>Have a project in mind, a question, or just want to say hi? I'd love to hear from you!</p>
+<div class="contact-details">
+<!-- 🔧 CHANGE: Fill in your contact details -->
+<div class="contact-detail-item">
+<div class="contact-icon"><i class="fas fa-envelope"></i></div>
+<div>
+<strong>Email</strong>
+<span>bhargavasood5@gmail.com</span>
+</div>
+</div>
+<div class="contact-detail-item">
+<div class="contact-icon"><i class="fas fa-phone"></i></div>
+<div>
+<strong>Phone</strong>
+<span>+91 9891773680</span>
+</div>
+</div>
+<div class="contact-detail-item">
+<div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+<div>
+<strong>Location</strong>
+<span>Noida, Uttar Pradesh, India</span>
+</div>
+</div>
+</div>
+<!-- 🔧 CHANGE: Replace href values with your social media URLs -->
+<div class="social-links">
+<a aria-label="GitHub" class="social-link github" href="https://github.com/Bhargavasood07" target="_blank"><i class="fab fa-github"></i></a>
+<a aria-label="LinkedIn" class="social-link linkedin" href="https://www.linkedin.com/in/bhargava-sood-5134b2306" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a aria-label="X" class="social-link twitter" href="https://x.com/BhargavaSo95996" target="_blank"><i class="fab fa-twitter"></i></a>
+<a aria-label="Instagram" class="social-link instagram" href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+<a aria-label="YouTube" class="social-link youtube" href="https://www.youtube.com/@BhargavaSood-e2j" target="_blank"><i class="fab fa-youtube"></i></a>
+<a aria-label="WhatsApp" class="social-link whatsapp" href="https://wa.me/919891773680" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="contact-form-wrapper contact-console-card">
+<div aria-hidden="true" class="form-terminal-bar">
+<div class="terminal-dots"><span></span><span></span><span></span></div>
+<span class="terminal-title">Contact Form</span>
+<span class="terminal-status"><i class="fas fa-circle"></i> online</span>
+</div>
+<form class="contact-form-pro" id="contactForm">
+<div class="form-heading-row">
+<div>
+<span class="form-mini-tag">Message</span>
+<h3>Send a Message</h3>
+</div>
+<div class="form-code-chip">Contact</div>
+</div>
+<p class="form-intro">For project work, internship opportunities, collaboration or technical discussion, send a clear message below.</p>
+<div aria-hidden="true" class="form-status-grid">
+<span><i class="fas fa-bolt"></i> Fast reply</span>
+<span><i class="fas fa-lock"></i> Validated form</span>
+<span><i class="fas fa-code"></i> Tech focused</span>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="name"><i class="fas fa-user"></i> Name</label>
+<input id="name" name="name" placeholder="Your Full Name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="mobile"><i class="fas fa-phone"></i> Mobile</label>
+<input id="mobile" name="mobile" placeholder="Your Mobile Number" required="" type="tel"/>
+</div>
+</div>
+<div class="form-group">
+<label for="email"><i class="fas fa-envelope"></i> Email</label>
+<input id="email" name="email" placeholder="Your Email Address" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="subject"><i class="fas fa-tag"></i> Subject</label>
+<input id="subject" name="subject" placeholder="What's this about?" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="message"><i class="fas fa-comment-alt"></i> Message</label>
+<textarea id="message" name="message" placeholder="Write your message here..." required=""></textarea>
+</div>
+<button class="btn btn-primary btn-block form-submit-pro" id="submit-btn" type="submit">
+<i class="fas fa-paper-plane"></i> Send Message
                         </button>
-                        <div id="status"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ========== BACK TO TOP ========== -->
-    <button id="toTopBtn" title="Back to top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    <!-- ========== FOOTER ========== -->
-    <footer>
-        <div class="container footer-content">
-            <!-- 🔧 CHANGE: Replace "Your Name" with your actual name -->
-            <p>&copy; <span id="year"></span> <strong class="footer-name">Bhargava Sood</strong>. All rights reserved.</p>
-            <p class="footer-tagline">Made to represent my work</p>
-        </div>
-    </footer>
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
+<div id="status"></div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== BACK TO TOP ========== -->
+<button aria-label="Back to top" id="toTopBtn" title="Back to top">
+<i class="fas fa-arrow-up"></i>
+</button>
+<!-- ========== FOOTER ========== -->
+<footer>
+<div class="container footer-content">
+<!-- 🔧 CHANGE: Replace "Your Name" with your actual name -->
+<p>© <span id="year"></span> <strong class="footer-name">Bhargava Sood</strong>. All rights reserved.</p>
+<p class="footer-tagline">Made to represent my work</p>
+</div>
+</footer>
+<script>document.addEventListener('DOMContentLoaded', () => {
     const $ = (selector, scope = document) => scope.querySelector(selector);
     const $$ = (selector, scope = document) => Array.from(scope.querySelectorAll(selector));
 
@@ -3965,7 +4324,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
 </script>
 </body>
 </html>
